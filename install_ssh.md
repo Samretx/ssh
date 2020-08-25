@@ -54,19 +54,19 @@ PasswordAuthentication no
 
 ### FIX IT
 
-# 1) Почистить уже вбитые серваки на клиенте
+#### 1) Почистить уже вбитые серваки на клиенте
 
 rm -rf /.ssh/known_hosts
 
-# 2) Проверка наличия паблик ключа на сервера
+#### 2) Проверка наличия паблик ключа на сервера
 
 ssh root@"ip-adrees" -v
 
-# Нужно найти строку:
+Нужно найти строку:
 
 Authentication that can continue: publickey,password
 
-# 3) Если не добавляется id_rsa на клиент
+#### 3) Если не добавляется id_rsa на клиент
 
 exec ssh-agent bash
 
